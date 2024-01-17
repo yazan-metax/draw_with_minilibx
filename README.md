@@ -41,7 +41,56 @@ int height = 900;
 win_ptr = mlx_new_window(mlx_ptr, width, height, "Window Title");
 
 ```
+- ### Displaying the Window
+Once the window is created, it can be displayed and interacted with. However, to keep the window open and responsive, you need to enter the MiniLibX main loop using the mlx_loop() function. This function keeps your application running and allows it to respond to events like keyboard and mouse inputs.
+```
+mlx_loop(mlx_ptr);
 
+```
+## now we can move to the function that responsible for drawing the circle 🟢:
 
+```
+void draw_circle(void *mlx_ptr,void *win_ptr,int x,int y,int color)
+{
+    t_point axis[2];
+    int width = 1440;
+    int height = 900;
 
+    int center_x = (width / 2) - x;// the x here is to change the x position from the center
+    int center_y = (height / 2) - y;//the y here is to change the y position from the center
+    int radius = 350;
+    int points = 100;
+    double angle = M_PI / points;
+    for (int i = 0; i < points * 2; i++) {
+        axis[0].x = center_x + radius * cos(i * angle);
+        axis[0].y = center_y + radius * sin(i * angle);
+        axis[1].x = center_x + radius * cos((i + 1) * angle);
+        axis[1].y = center_y + radius * sin((i + 1) * angle);
+        mlx_pixel_put(mlx_ptr, win_ptr, axis[0].x, axis[0].y, color);
+        draw_line(mlx_ptr,win_ptr,axis,color);
+    }
+}
+```
+ ## Algorithm Explanation:
+ 
+- ### Window Dimensions:
+The function defines the width and height of the window where the circle will be drawn. These are set to `1440` and `900` respectively,you can freely change them they way you want.
+- ### circle Center Calculation:
+The center of the circle (center_x, center_y) is calculated based on the window's dimensions and the provided x and y offsets. This allows the circle's position to be dynamically changed within the window.
+
+- ### Circle Properties:
+1) The radius of the circle is set to `350`.
+2) The number of points `(points)` used to draw the circle is `100`. This defines the smoothness of the circle. More points result in a smoother circle.
+
+- ### Angle Calculation:
+The angle increment (`angle`) is calculated based on the number of points. This determines the spacing between each point on the circle's circumference.
+
+- ### Drawing the Circle:
+1) The function iterates over each point, calculating the `x` and `y` coordinates for each segment of the circle using trigonometric functions (`cos` and `sin`).
+2) `mlx_pixel_put` is used to place pixels at these coordinates in the specified color,NOTE: usually we use a costume function that works more efficiently than this one.
+
+- ### another notes 😊:
+1) This function draws a circle by connecting multiple short lines, giving the appearance of a continuous curve.
+2) The `x` and `y` parameters allow the circle to be positioned anywhere relative to the window's center.
+3) The color is adjustable, offering flexibility in the circle's appearance.
 
