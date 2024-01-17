@@ -107,7 +107,7 @@ gcc -o my_program my_program.c -lm -lmlx -L[path_to_mlx] -framework OpenGL -fram
 ```
 - make sure to search about these flags and the use of each one of them.
 - Replace `[path_to_mlx]` with the actual path where the MiniLibX library is located, if it's not in the standard library paths or add these flags in your `Makefile`
-so it can be used automatically .
+as i have done in this program so it can be used automatically by simply using the `make` command.
 
 
 <h1 align="center">BE CREATIVE 🧑🏻‍🎨
