@@ -92,11 +92,21 @@ The angle increment (`angle`) is calculated based on the number of points. This 
 1) The function iterates over each point, calculating the `x` and `y` coordinates for each segment of the circle using trigonometric functions (`cos` and `sin`).
 2) `mlx_pixel_put` is used to place pixels at these coordinates in the specified color,NOTE: usually we use a costume function that works more efficiently than this one.
 
-- ### another notes 😊:
+- ### notes 😊:
 1) This function draws a circle by connecting multiple short lines, giving the appearance of a continuous curve.
 2) The `x` and `y` parameters allow the circle to be positioned anywhere relative to the window's center.
 3) The color is adjustable, offering flexibility in the circle's appearance.
 
+## very important  note:🚨
+before you compile the program make sure to compile it with the necessary flags that correctly links to all necessary libraries and frameworks for graphical operations and user interface handling in MiniLibX applications on macOS.
+
+example:
+```
+gcc -o my_program my_program.c -lm -lmlx -L[path_to_mlx] -framework OpenGL -framework AppKit
+
+```
+- make sure to search about these flags and the use of each one of them.
+- Replace `[path_to_mlx]`` with the actual path where the MiniLibX library is located, if it's not in the standard library paths.
 
 <h1 align="center">BE CREATIVE 🧑🏻‍🎨
 </h1>
