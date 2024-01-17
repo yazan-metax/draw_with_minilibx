@@ -51,7 +51,7 @@ void draw_stars(void *mlx,void *win, int color)
     }
 }
 /*
-this function for drawing the circle it can also just draw just some dots around that circle
+this function for drawing the circle it can also just draw some dots around that circle
 */
 void draw_circle(void *mlx_ptr,void *win_ptr,int x,int y,int color)
 {
