@@ -104,5 +104,5 @@ The angle increment (`angle`) is calculated based on the number of points. This 
 <img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2017.37.35.png">
 <img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2019.57.55.png">
 <img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-16%20at%2020.35.14.png">
-<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2017.19.28.png">
+<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2020.06.56.png">
 
