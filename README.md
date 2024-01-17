@@ -17,7 +17,7 @@ In this tutorial, we will explore the fundamentals of drawing basic shapes using
 - this code doesn't follow the norms that required by the school, it is made for tutorial purposes .
 - the purpose of this code is to make it easy for people who want to understand the logic of drawing any thing on a window using minilibx before they jump into bigger projects like [`FDF`](https://github.com/yazan-metax/FDF).
 - 🚩 when you look at the code you might find that some of the function they have kind of the same code but with different variables values and also with different input that can result on different functionality  at the  beginning just focus on the `draw_circle()` function , once you understand it the other ones will be easy to understand .
-
+<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2017.40.28.png">
 ## 1) how to Initialize a window using MiniLibX 🤔:
 
 ### -  Initialization of the MiniLibX Instance.
