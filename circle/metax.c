@@ -83,7 +83,7 @@ int main()
     int height = 900;
 
     mlx_ptr = mlx_init();
-    win_ptr = mlx_new_window(mlx_ptr, width, height, "MiniLibX Star");
+    win_ptr = mlx_new_window(mlx_ptr, width, height, "METAX");
     //draw_shape(mlx_ptr,win_ptr,0,50);
     draw_circle(mlx_ptr,win_ptr,0,50,GREEN2);
     mlx_loop(mlx_ptr);
