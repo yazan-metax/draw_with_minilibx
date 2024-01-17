@@ -97,3 +97,10 @@ The angle increment (`angle`) is calculated based on the number of points. This 
 2) The `x` and `y` parameters allow the circle to be positioned anywhere relative to the window's center.
 3) The color is adjustable, offering flexibility in the circle's appearance.
 
+
+<h1 align="center">BE CREATIVE 🧑🏻‍🎨
+</h1>
+
+<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2017.37.35.png">
+<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-16%20at%2020.35.14.png">
+<img src="https://github.com/yazan-metax/draw_with_minilibx/blob/main/image2/Screenshot%202024-01-17%20at%2017.19.28.png">
